@@ -1,0 +1,63 @@
+<!--
+    Copyright(c) Microsoft Open Technologies, Inc. All rights reserved.
+    The MIT License(MIT)
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files(the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions :
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+-->
+
+
+
+<Page
+    x:Class="HelloWorld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="800" Height="480">
+
+    <Grid BorderBrush="#FF2D65FB" Background="#FF2D65FB"  >
+        <HyperlinkButton Content="NAPI SABLONOK" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="241" Height="62"  FontSize="18" FontWeight="Bold" Background="#4C000000" FontFamily="Segoe UI Black" AutomationProperties.Name="button_day" Foreground="White" Click="HyperlinkButton_Daily" />
+        <HyperlinkButton Content="STATISZTIKA" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="241" Height="60"  FontSize="18" FontWeight="Bold" Background="#4C000000" FontFamily="Segoe UI Black" AutomationProperties.Name="button_stat" Foreground="White" Click="HyperlinkButton_Stat"/>
+        <Button Content="BEÁLLÍTÁSOK" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Width="241" Height="62"  FontSize="18" FontWeight="Bold" Background="#4C000000" FontFamily="Segoe UI Black" AutomationProperties.Name="button_settings" Foreground="White"/>
+
+        <Image Source="Assets/heat.png" HorizontalAlignment="Left" Height="40" Margin="24,382,0,0" VerticalAlignment="Top" Width="40" />
+        <Image Source="Assets/sensor.png" HorizontalAlignment="Left" Height="47" Margin="20,320,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="Assets/error.png" HorizontalAlignment="Left" Height="45" Margin="20,257,0,0" VerticalAlignment="Top" Width="45"/>
+        <Image Source="Assets/daily.png" HorizontalAlignment="Left" Height="43" Margin="12,20,0,0" VerticalAlignment="Top" Width="44"/>
+        <Image Source="Assets/options.png" HorizontalAlignment="Left" Height="40" Margin="16,151,0,0" VerticalAlignment="Top" Width="41"/>
+        <Image Source="Assets/stat.png" HorizontalAlignment="Left" Height="39" Margin="16,86,0,0" VerticalAlignment="Top" Width="40"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="77,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="#FF21E02C" FontWeight="Bold" FontSize="18" LineHeight="7" Text="Nincs hiba"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="77,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Foreground="#FF21E02C" FontWeight="Bold" FontSize="18" LineHeight="7" Text="Érzékelők rendben"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="77,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="18" LineHeight="7" Text="Nincs fűtés"/>
+        <TextBlock x:Name="tbAverage" HorizontalAlignment="Left" Height="100" Margin="301,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="70" LineHeight="7" TextAlignment="Center" Text="25.5°C"/>
+        <TextBlock HorizontalAlignment="Left" Height="55" Margin="225,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="72" LineHeight="7" TextAlignment="Center">
+            <Run FontSize="36" Text="25.5°C"/>
+        </TextBlock>
+
+
+        <TextBlock HorizontalAlignment="Left" Height="55" Margin="409,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="72" LineHeight="7" TextAlignment="Center">
+            <Run FontSize="36" Text="25.5°C"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="55" Margin="597,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FFFDFDFD" FontWeight="Bold" FontSize="72" LineHeight="7" TextAlignment="Center">
+            <Run FontSize="36" Text="20%"/>
+        </TextBlock>
+
+
+
+    </Grid>
+</Page>

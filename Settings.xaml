@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="HelloWorld.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyForegroundApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable ="d" Height="480px" Width="800px">
+
+    <Grid BorderBrush="#FF2D65FB" Background="#FF2D65FB" >
+        <HyperlinkButton Click="HyperlinkButton_Back_Settings" Content="VISSZA" HorizontalAlignment="Left" Margin="549,10,0,0" VerticalAlignment="Top" Width="241" Height="62"  FontSize="18" FontWeight="Bold" Background="#4C000000" FontFamily="Segoe UI Black" AutomationProperties.Name="button_back_stat" Foreground="White" />
+        <TextBlock HorizontalAlignment="Right" Height="24" Margin="0,93,438,0" TextWrapping="Wrap" Text="Bemelegedési idő:" VerticalAlignment="Top" Width="156" RenderTransformOrigin="3.389,-1.75" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Right" Height="24" Margin="0,135,438,0" TextWrapping="Wrap" Text="Vizsgálás kezdete:" VerticalAlignment="Top" Width="156" RenderTransformOrigin="3.389,-1.75" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Right" Height="24" Margin="0,175,438,0" TextWrapping="Wrap" Text="Lehűlési idő:" VerticalAlignment="Top" Width="156" RenderTransformOrigin="3.389,-1.75" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Right" Height="24" Margin="0,222,438,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" RenderTransformOrigin="3.389,-1.75" TextAlignment="Right">
+            <Run Text="Vizsgálási hőmérséklet"/>
+            <Run Text=" különbség:"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Right" Height="24" Margin="0,251,438,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" RenderTransformOrigin="3.389,-1.75" TextAlignment="Right">
+            <Run Text="Lekapcsolási "/>
+            <Run Text="hőmérséklet"/>
+            <Run Text=" különbség:"/>
+        </TextBlock>
+
+
+
+
+
+    </Grid>
+</Page>
